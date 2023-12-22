@@ -346,7 +346,7 @@
                         <td colspan="2"><strong>Stasiun</strong><br />' + (feature.properties['Stasiun'] !== null ? autolinker.link(feature.properties['Stasiun'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Foto</strong><br />' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2"><strong>Foto</strong><br />' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : '' ) + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Alamat'] !== null ? autolinker.link(feature.properties['Alamat'].toLocaleString()) : '') + '</td>\
